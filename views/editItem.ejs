@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>You can eassily update your data.</h2>
+        <form action="/update-item/<%= item._id %>" method="POST">
+            <label for="name">ItemName:</label> 
+            <input type="text" id="name" name="name" value="<%= item.name %>">
+            <br><br>
+            <label for="description">Description:</label>
+            <input type="text" name="description" value="<%= item.description %>">
+            <br><br>
+            <label for="price">Price:</label>
+            <input type="text" name="price" value="<%= item.price %>">
+            <br><br>
+            <button type="submit">Update</button>
+         </form>
+
+    </div>
+
+</body>
+</html>

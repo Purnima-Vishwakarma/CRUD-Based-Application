@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <h1 style="text-align:center;"><u>CRUD Based Application</u></h1>
+    <div class="container">
+
+        <h2>Add New Item:</h2>
+        <form action="/add-item" method="POST">
+        <label for="name">ItemName:</label>
+        <input type="text" id="name" name="name" placeholder="enter your item name">
+        <br><br>
+        <label for="description">Description:</label>
+        <input type="text" id="description" name="description" placeholder="enter the description">
+        <br><br>
+        <label for="price">Price:</label>
+        <input type="text" id="price" name="price" placeholder="enter the price of item">
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
+
+    </div>
+ 
+</body>
+</html>
