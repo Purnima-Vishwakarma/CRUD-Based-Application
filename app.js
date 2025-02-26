@@ -3,7 +3,7 @@ const app=express();
 const mongoose = require('mongoose');
 const bodyParser=require("body-parser");
 app.use(express.static("public"));
-app.set("view engine", "ejs");  // Corrected this line
+app.set("view engine", "ejs"); 
 
 const Item = require('./models/item');
 const methodOverride=require('method-override');
